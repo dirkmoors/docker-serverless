@@ -1,4 +1,5 @@
-FROM node:8.0.0
+# node LTS
+FROM node:boron
 
 ENV ROOT="/data"
 
