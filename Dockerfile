@@ -12,7 +12,7 @@ RUN npm install -g serverless@1.14.0
 # Install Python tools
 RUN set -x \
     && apt-get update \
-    && apt-get install -y --no-install-recommends python-setuptools python-pip \
+    && apt-get install -y --no-install-recommends python-setuptools python-pip python-dev \
     && rm -rf /var/lib/apt/lists/*
 
 RUN mkdir -p ${SRC_DIR}
